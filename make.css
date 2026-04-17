@@ -37,7 +37,7 @@ a {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    background-color: aliceblue;
+    background-color: blue;
 }
 
 .page-header__upper-row {
@@ -76,7 +76,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    background-color: blue;
     width: 100%;
 }
 
