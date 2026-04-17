@@ -7,20 +7,19 @@
     box-sizing: border-box;
 }
 
-a:any-link {
-    text-decoration: none;
-    color: black;
-}
-
 .body {
     font-family: "Open Sans";
     margin: 0;
     padding: 0;
 }
 
-.page {
-    
+a:any-link {
+    text-decoration: none;
+    color: black;
 }
+
+
+.page {}
 
 ul {
     list-style: none;
@@ -99,7 +98,7 @@ a {
     cursor: pointer;
     color: black;
     background-color: blue;
-    
+
 }
 
 .work-proof {
