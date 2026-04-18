@@ -1,14 +1,16 @@
 @font-face {
-    font-family: 'Open Sans';
-    src: url(OpenSans-VariableFont_wdth,wght.ttf);
+    font-family: "Open Sans";
+    src: url("OpenSans-VariableFont_wdth,wght.ttf");
+    font-weight: 100 900;
+    font-style: normal;
 }
 
 * {
     box-sizing: border-box;
 }
 
-.body {
-    font-family: "Open Sans";
+.html, body {
+    font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -37,21 +39,28 @@ a {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    background-color: blue;
+    background-color: #FAF3E0;
 }
 
 .page-header__upper-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: cornsilk;
+    color: black;
 }
 
 .logo {
     display: flex;
     flex-direction: row;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .contents {
@@ -76,15 +85,14 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: #FAF3E0;
     width: 100%;
 }
 
 .hero__first-row h1 {
     display: flex;
     justify-content: center;
-    font-size: xx-large;
-    font-family: sans-serif;
+    font-size: 56px;
     font-weight: 700;
 }
 
@@ -94,10 +102,43 @@ a {
     align-items: center;
 }
 
+.button {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    color: white;
+    background-color: #0ea5e9;
+
+}
+
+.hero__first-row__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 50px;
+    width: 230px;
+    cursor: pointer;
+    color: white;
+    background-color: #0056D2;
+    font-size: 600;
+    font-weight: 600;
+
+}
+
 .btn {
     cursor: pointer;
     color: black;
     background-color: blue;
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: 230px;
+    height: 54px;
+    text-align: center;
 
 }
 
@@ -121,11 +162,27 @@ a {
     width: auto;
 }
 
+.services {
+    display: flex;
+}
+
+.our-services {
+    display: flex;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .contact {
     padding: 60px;
     text-align: center;
     background: #0f172a;
-    /* dark vibe like that site */
     color: white;
 }
 
@@ -165,6 +222,7 @@ button {
     border: none;
     background: #38bdf8;
     color: black;
+    font-family: "Open Sans";
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
