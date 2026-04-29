@@ -9,7 +9,8 @@
     box-sizing: border-box;
 }
 
-.html, body {
+.html,
+body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
@@ -39,7 +40,7 @@ a {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    background-color: #FAF3E0;
+    background-color: lightskyblue;
 }
 
 .page-header__upper-row {
@@ -52,7 +53,7 @@ a {
     padding: 20px;
     padding-top: 0;
     padding-bottom: 0;
-    background-color: cornsilk;
+    background-color: lightblue;
     color: black;
 }
 
@@ -85,7 +86,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #FAF3E0;
+    background-color: skyblue;
     width: 100%;
 }
 
@@ -158,16 +159,21 @@ a {
 }
 
 .logo-img {
-    height: 25px;
+    height: 5px;
     width: auto;
 }
 
 .services {
-    display: flex;
+    padding: 60px;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
 }
 
 .our-services {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .services-grid {
@@ -177,6 +183,35 @@ a {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+.service-card {
+    background: skyblue;
+    padding: 25px;
+    border-radius: 12px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.icon {
+    font-size: 5px;
+    margin-bottom: 10px;
+}
+
+.service-card .icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.service-card.active {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
 }
 
 .contact {

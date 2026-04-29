@@ -21,7 +21,7 @@
                     <li class="contents__content">
                         <a class="contents__content__link" href="#">
                             Work
-                        </a> 
+                        </a>
                     </li>
                     <li class="contents__content">
                         <a class="contents__content__link" href="#">
@@ -68,25 +68,31 @@
     <section class="services">
         <div class="our-services">
             <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="icon">💻</div>
-                <h3>HIGH-END WEB DEVELOPMENT</h3>
-                <p>Optimized, responive websites built with Webflow or custom HTML/CSS.</p>
-
-            </div>
 
             <div class="services-grid">
-                <div class="icon">🔍</div>
-                <h3>SEO STRATEGY AND VISIBILITY</h3>
-                <p>Get found by the right clients on Google and increase organic leads.</p>
 
-            </div>
+                <div class="service-card" onclick="toggleCard(this)">
+                    <div class="icon">
+                        <img src="logos/laptop.png">
+                    </div>
+                    <h3>HIGH-END WEB DEVELOPMENT</h3>
+                    <p>Optimized, responive websites built with Webflow or custom HTML/CSS.</p>
 
-            <div class="services-grid">
-                <div class="icon">⚙️</div>
-                <h3>MARKETING AUTOMATION</h3>
-                <p>Smart forms, CRS integration (HubSpot/Pipedrive), and automated lead nurturing.</p>
+                </div>
 
+                <div class="service-card" onclick="toggleCard(this)">
+                    <div class="icon"></div>
+                    <h3>SEO STRATEGY AND VISIBILITY</h3>
+                    <p>Get found by the right clients on Google and increase organic leads.</p>
+
+                </div>
+
+                <div class="service-card" onclick="toggleCard(this)">
+                    <div class="icon">⚙️</div>
+                    <h3>MARKETING AUTOMATION</h3>
+                    <p>Smart forms, CRS integration (HubSpot/Pipedrive), and automated lead nurturing.</p>
+
+                </div>
             </div>
         </div>
     </section>
@@ -118,4 +124,6 @@
             <p>© 2026 Makeshift Digital OY Clone. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script> function toggleCard(el) { el.classList.toggle("active"); } </script>
 </body>
