@@ -40,7 +40,7 @@ a {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    background-color: lightskyblue;
+    background-color: white;
 }
 
 .page-header__upper-row {
@@ -53,7 +53,7 @@ a {
     padding: 20px;
     padding-top: 0;
     padding-bottom: 0;
-    background-color: lightblue;
+    background-color: white;
     color: black;
 }
 
@@ -86,7 +86,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: skyblue;
+    background-color: white;
     width: 100%;
 }
 
@@ -186,7 +186,7 @@ a {
 }
 
 .service-card {
-    background: skyblue;
+    background: white;
     padding: 25px;
     border-radius: 12px;
     cursor: pointer;
@@ -217,8 +217,8 @@ a {
 .contact {
     padding: 60px;
     text-align: center;
-    background: #0f172a;
-    color: white;
+    background: #f1f5f9;
+    color: black;
 }
 
 .contact-form {
@@ -237,8 +237,8 @@ textarea {
     border: none;
     border-radius: 8px;
     outline: none;
-    background: #1e293b;
-    color: white;
+    background: white;
+    color: black;
     font-size: 16px;
     transition: 0.3s;
 }
