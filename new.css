@@ -90,8 +90,12 @@ a {}
 
 .hero {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: left;
+    gap: 40px;
     padding: 100px 60px;
+    margin: auto;
     background: linear-gradient(to right, #FFFFFF, #F6FAF7);
 
 }
@@ -106,7 +110,13 @@ a {}
 
 }
 
-.hero-logo {}
+.hero-logo {
+    background-color: transparent;
+}
+
+lottie-player {
+    background: transparent;
+}
 
 .clients {
     padding: 80px 60px;
@@ -118,14 +128,13 @@ a {}
     text-align: left;
     margin-bottom: 40px;
     font-size: 2rem;
+    font-weight: 600;
     color: #1F3B2E;
 
 }
 
-.logo-img {
-    max-height: 40px;
-    width: auto;
-    display: block;
+h3 {
+    font-weight: 500;
 }
 
 .kone-box {
@@ -139,14 +148,15 @@ a {}
 }
 
 .kone-text {
-    width: 65%;
+    width: 100%;
     text-align: left;
     color: #1F3B2E;
+    font-weight: 300;
 
 }
 
 .kone-logo {
-    height: 25px;
+    height: 100px;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -168,10 +178,11 @@ a {}
     width: 65%;
     text-align: left;
     color: #1F3B2E;
+    font-weight: 300;
 }
 
 .guest-logo {
-    height: 25px;
+    height: 150px;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -193,10 +204,11 @@ a {}
     width: 65%;
     text-align: left;
     color: #1F3B2E;
+    font-weight: 300;
 }
 
 .arkken-logo {
-    height: 25px;
+    height: 50px;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -219,10 +231,11 @@ a {}
     width: 65%;
     text-align: left;
     color: #1F3B2E;
+    font-weight: 300;
 }
 
 .storylake-logo {
-    height: 25px;
+    height: 150px;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -245,10 +258,11 @@ a {}
     width: 65%;
     text-align: left;
     color: #1F3B2E;
+    font-weight: 300;
 }
 
 .krusti-logo {
-    height: 25px;
+    height: 150px;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -260,7 +274,7 @@ a {}
     padding: 80px 60px;
     background-color: #F8FAF8;
     color: #111827;
-    text-align: center;
+    text-align: left;
 
 }
 
@@ -271,12 +285,14 @@ a {}
 
 }
 
-.our-services h2 {}
+.our-services h2 {
+    font-weight: 600;
+}
 
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 20px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -289,7 +305,7 @@ a {}
     justify-content: flex-start;
     background: white;
     border: 1px solid #E5E7EB;
-    padding: 30px;
+    padding: 18px;
     min-height: 220px;
     border-radius: 12px;
     cursor: pointer;
@@ -354,19 +370,23 @@ input,
 textarea {
     width: 100%;
     padding: 15px;
-    border: none;
+    border: 1px solid #E5E7EB;
     border-radius: 8px;
     outline: none;
     background: white;
     color: black;
     font-size: 16px;
     transition: 0.3s;
+    resize: none;
+    outline: none;
 }
 
 input:focus,
 textarea:focus {
-    border: 1px solid #38bdf8;
-    background: #020617;
+    border: 1px solid #2FBF71;
+    background: #F0FAF4;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(47, 191, 113, 0.2);
 }
 
 button {
@@ -402,6 +422,4 @@ button:hover {
 
 }
 
-@media (max-width: 768px) {
-    
-}
+@media (max-width: 768px) {}
