@@ -379,13 +379,13 @@ h3 {
 
 .service-card.active {
     transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.38);
     background: #EAF5EE;
-    border-color: #1f7a53;
+    border: 5px solid #1f7a53;
 }
 
 .service-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-4px);
 }
 
 
@@ -465,7 +465,7 @@ button:hover {
 @media (max-width: 768px) {
 
     .page-header__upper-row {
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
         padding: 20px;
         gap: 15px;
