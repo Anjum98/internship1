@@ -230,5 +230,19 @@
         </div>
     </footer>
 
-    <script> function toggleCard(el) { el.classList.toggle("active"); } </script>
+    <script>
+
+        function toggleCard(el) {
+            el.classList.toggle("active");
+        }
+
+        const form = document.querySelector(".contact-form");
+
+        form.addEventListener("submit", function () {
+            setTimeout(() => {
+                form.reset();
+            }, 100);
+        });
+
+    </script>
 </body>
