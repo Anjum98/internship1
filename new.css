@@ -46,7 +46,7 @@ li {
 
 .logo {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 30px;
     align-items: center;
 }
 
@@ -162,15 +162,180 @@ lottie-player {
     width: 300px;
 }
 
+.see-work {
+    padding: 120px 60px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.see-work h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #006aff;
+    height: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.see-work h2:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.work-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.work-card {
+    flex: 0 0 180px;
+    height: 180px;
+}
+
+.work-card img {
+    width: auto;
+    height: 80%;
+    object-fit: contain;
+    display: block;
+    border-radius: 10px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.work-card:hover {
+    transform: translateY(-6px);
+}
+
+.delivery {
+    background-color: lightgoldenrodyellow;
+}
+
+.kone-case {}
+
+.kone-case h1 {
+    font-weight: 400;
+}
+
+.kone-case h2 {
+    font-size: bold;
+    font-weight: 500;
+}
+
+.kone-page {
+    background: #F8F8F8;
+    color: #111827;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.kone-page p{
+    font-size: large;
+}
+
+.kone-case,
+.testimonies,
+.about,
+.details,
+.optimized,
+.Content,
+.scaling {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 60px;
+}
+
+.kone-case-img {
+    width: 800px;
+    height: 400px;
+    max-width: 100%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.kone-img {
+    width: 100px;
+    height: auto;
+
+}
+
+.taxstar-img {
+    width: 100px;
+    height: auto;
+
+}
+
+.guestbook-img {
+    width: auto;
+    height: 70px;
+
+}
+
+.arkken-img {
+    width: 100px;
+    height: auto;
+}
+
+.alpha-img {
+    width: 120px;
+    height: auto;
+}
+
+.harmonya-img {
+    width: 120px;
+    height: auto;
+}
+
 .clients {
     padding: 80px 60px;
     background: #FFFFFF;
     border-top: 1px solid #F0F2F3;
 }
 
+.client-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 60px;
+}
+
+.client-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: white;
+    background: white;
+    border-radius: 18px;
+}
+
+.client-card:hover {
+    text-decoration: underline;
+}
+
+.client-text h3 {
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 70%;
+    line-height: 1.4;
+}
+
+.client-logo img {
+    height: 50px;
+    object-fit: contain;
+}
+
 .clients h2 {
     text-align: left;
     margin-bottom: 40px;
+    padding: 25px 0;
     font-size: 2rem;
     font-weight: 600;
     color: #1F3B2E;
@@ -336,7 +501,7 @@ h3 {
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 45px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -384,7 +549,7 @@ h3 {
 }
 
 .service-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-12px);
 }
 
 .contact {
@@ -395,10 +560,68 @@ h3 {
     color: black;
 }
 
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.contact-left {
+    flex: 2;
+}
+
+.contact-right {
+    flex: 1;
+    text-align: left;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #1F3B2E;
+    font-size: 34px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.linkedin a:hover {
+    color: #0A66C2;
+}
+
+.instagram i:hover {
+    background: linear-gradient(45deg, #ffd600, #ff7a00, #ff0069, #d300c5, #7638fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.instagram a:hover {
+    background: none;
+}
+
+.facebook a:hover {
+    color: rgb(24, 119, 242);
+}
+
+.youtube a:hover {
+    color: #ff0051;
+}
 
 .contact-form {
     max-width: 500px;
     margin: auto;
+    text-align: left;
+    color: gray;
 }
 
 .input-group {
@@ -426,6 +649,87 @@ textarea:focus {
     background: #F0FAF4;
     outline: none;
     box-shadow: 0 0 0 3px rgba(47, 191, 113, 0.2);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.checkbox-group input {
+    width: auto;
+    transform: scale(1.5);
+    background-color: transparent;
+    accent-color: #2fbf71;
+
+}
+
+.checkbox-group input:focus {
+    box-shadow: none;
+
+}
+
+a.terms-text {
+    text-decoration: underline;
+    cursor: pointer;
+    color: dodgerblue;
+    font-weight: 500;
+}
+
+.terms-text:hover {
+    color: blue;
+
+}
+
+
+.terms-section {
+    max-width: 600px;
+    background: white;
+    padding: 40px;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.terms-section h2 {
+    margin-bottom: 20px;
+}
+
+.terms-section ul {
+    padding-left: 20px;
+}
+
+.terms-section li {
+    margin-bottom: 10px;
+    color: #374151;
+}
+
+.terms-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #F8FAF8;
+    padding: 40px;
+}
+
+a.back-link {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    color: dodgerblue;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: larger;
+}
+
+.back-link:hover {
+    color: blue;
 }
 
 button {
@@ -458,6 +762,15 @@ button:hover {
     margin: 0;
     margin-top: auto;
 
+}
+
+.page-footer__second-row {
+    align-items: center;
+}
+
+.page-footer__second-row p {
+    color: gray;
+    font-size: 15px;
 }
 
 @media (max-width: 768px) {
