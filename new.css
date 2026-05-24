@@ -584,7 +584,7 @@ lottie-player {
     margin-top: 80px;
     border-radius: 20px;
     padding: 10px;
-    background-color:#A3B0C2;
+    background-color: #A3B0C2;
 }
 
 .kone-img {
@@ -624,12 +624,13 @@ lottie-player {
     padding: 80px 0;
     background: #FFFFFF;
     border-top: 1px solid #F0F2F3;
+    overflow: hidden;
 }
 
 .client-container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 60px;
+    padding: 0 30px;
 }
 
 .client-card {
@@ -637,27 +638,24 @@ lottie-player {
     justify-content: space-between;
     align-items: center;
     padding: 40px;
-    margin-bottom: 20px;
     text-decoration: none;
     color: white;
     background: white;
-    border-radius: 18px;
 }
 
 .client-card:hover {
     text-decoration: underline;
 }
 
-.client-text h3 {
-    font-size: 20px;
-    font-weight: 400;
-    max-width: 70%;
-    line-height: 1.4;
+.client-card:hover img {
+    transform: scale(1.03);
 }
 
-.client-logo img {
-    height: 50px;
-    object-fit: contain;
+.client-text h3 {
+    font-size: 30px;
+    font-weight: 400;
+    width: 80%;
+    line-height: 1.4;
 }
 
 .clients h2 {
@@ -668,7 +666,13 @@ lottie-player {
     font-size: 2rem;
     font-weight: 600;
     color: #1F3B2E;
+    position: relative;
+    transform: rotate(0);
 
+}
+
+.client-logo img{
+    width:100%;
 }
 
 h3 {
