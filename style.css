@@ -246,16 +246,15 @@ lottie-player {
     padding: 20px 60px;
 }
 
-.kone-case-img {
-    width: 900px;
-    height: 400px;
-    max-width: 100%;
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 16px;
+.kone-case-img,
+.guestbook-case-img,
+.arkken-case-img,
+.storylake-case-img,
+.krusti-case-img {
+    width: 100%;
+    aspect-ratio: 16/9;
     object-fit: cover;
+    border-radius: 16px;
 }
 
 .testimony {
@@ -379,18 +378,6 @@ lottie-player {
     padding: 20px 60px;
 }
 
-.guestbook-case-img {
-    width: 900px;
-    height: 500px;
-    max-width: 100%;
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 16px;
-    object-fit: cover;
-}
-
 .guestbook-delivery {
     display: flex;
     flex-direction: row;
@@ -438,18 +425,6 @@ lottie-player {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px 60px;
-}
-
-.arkken-case-img {
-    width: 900px;
-    height: 500px;
-    max-width: 100%;
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 16px;
-    object-fit: cover;
 }
 
 .arkken-delivery {
@@ -502,18 +477,6 @@ lottie-player {
     padding: 20px 60px;
 }
 
-.storylake-case-img {
-    width: 900px;
-    height: 500px;
-    max-width: 100%;
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 16px;
-    object-fit: cover;
-}
-
 .storylake-delivery {
     display: flex;
     flex-direction: row;
@@ -561,18 +524,6 @@ lottie-player {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px 60px;
-}
-
-.krusti-case-img {
-    width: 900px;
-    height: 400px;
-    max-width: 100%;
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 16px;
-    object-fit: cover;
 }
 
 .krusti-delivery {
@@ -671,8 +622,9 @@ lottie-player {
 
 }
 
-.client-logo img{
-    width:100%;
+.client-logo img {
+    width: 100%;
+    height: auto;
 }
 
 h3 {
@@ -1109,16 +1061,28 @@ button:hover {
 @media (max-width: 768px) {
 
     .page-header__upper-row {
-        flex-direction: row;
-        height: auto;
-        padding: 20px;
-        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contents {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .hero {
         flex-direction: column;
         text-align: center;
         padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 16px;
     }
 
     .hero__first-row {
@@ -1134,10 +1098,43 @@ button:hover {
         font-size: 14px;
     }
 
+    .client-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+        text-decoration: none;
+        color: white;
+        background: white;
+    }
+
+    .client-text h3 {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .client-logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-card {
+        min-height: auto;
+    }
+
     .clients,
     .services,
     .contact {
         padding: 50px 20px;
+    }
+
+    .kone-logo,
+    .guest-logo,
+    .arkken-logo,
+    .storylake-logo,
+    .krusti-logo {
+        height: auto;
+        max-width: 180px;
     }
 
     .kone-box,
@@ -1156,6 +1153,39 @@ button:hover {
     .krusti-text,
     .kone-text {
         width: 100%;
+    }
+
+    .kone-case,
+    .guestbook-case,
+    .arkken-case,
+    .storylake-case,
+    .krusti-case {
+        padding: 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+    }
+
+    .kone-delivery,
+    .guestbook-delivery,
+    .arkken-delivery,
+    .storylake-delivery,
+    .krusti-delivery {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .work-grid {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     lottie-player {
