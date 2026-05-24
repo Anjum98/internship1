@@ -87,6 +87,10 @@ img {
 
 }
 
+.menu-icon {
+    display: none;
+}
+
 .contents {
     display: flex;
     list-style: none;
@@ -1094,8 +1098,13 @@ button:hover {
     }
 
     .contents {
-        gap: 12px;
-        font-size: 14px;
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 32px;
+        cursor: pointer;
     }
 
     .client-card {
