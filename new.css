@@ -210,14 +210,13 @@ lottie-player {
     transform: translateY(-6px);
 }
 
-.delivery {
-    background-color: lightgoldenrodyellow;
-}
-
 .kone-case {}
 
 .kone-case h1 {
     font-weight: 400;
+    font-size: 45px;
+    margin-bottom: 30px;
+    line-height: 1.3;
 }
 
 .kone-case h2 {
@@ -228,10 +227,10 @@ lottie-player {
 .kone-page {
     background: #F8F8F8;
     color: #111827;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
 }
 
-.kone-page p{
+.kone-page p {
     font-size: large;
 }
 
@@ -242,13 +241,13 @@ lottie-player {
 .optimized,
 .Content,
 .scaling {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px 60px;
 }
 
 .kone-case-img {
-    width: 800px;
+    width: 900px;
     height: 400px;
     max-width: 100%;
     display: inline-block;
@@ -257,6 +256,335 @@ lottie-player {
     align-items: center;
     border-radius: 16px;
     object-fit: cover;
+}
+
+.testimony {
+    background: -o-linear-gradient();
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.testimony i {
+    font-size: 20px;
+    line-height: 1.2;
+    display: block;
+    color: #1F2937;
+}
+
+.kone-delivery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 80px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #F0F2E8;
+}
+
+.we-delivered h3 {
+    font-size: 24px;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 28px;
+    padding-left: 10px;
+}
+
+.we-delivered {
+    flex: 2;
+    -webkit-font-smoothing: antialiased;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.we-delivered ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.we-delivered li {
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #374151;
+    padding-left: 10px;
+}
+
+
+.deliver-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.challenge,
+.solution,
+.result {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.challenge p,
+.solution p,
+.result p {
+    line-height: 1.8;
+    font-size: 18px;
+    color: #374151;
+}
+
+.challenge h2,
+.solution h2,
+.result h2 {
+    margin-bottom: 25px;
+    line-height: 1.3;
+}
+
+.guestbook-page {
+    background: #F8F8F8;
+    color: #111827;
+    font-family: sans-serif;
+}
+
+.guestbook-page p {
+    font-size: large;
+}
+
+.guestbook-case h1 {
+    font-weight: 400;
+    font-size: 45px;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.guestbook-case h2 {
+    font-size: bold;
+    font-weight: 500;
+}
+
+.guestbook-case,
+.testimonies,
+.about,
+.details,
+.optimized,
+.Content,
+.scaling {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 60px;
+}
+
+.guestbook-case-img {
+    width: 900px;
+    height: 500px;
+    max-width: 100%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.guestbook-delivery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 80px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #e2e2e2;
+}
+
+.arkken-page {
+    background: #F8F8F8;
+    color: #111827;
+    font-family: sans-serif;
+}
+
+.arkken-page p {
+    font-size: large;
+}
+
+.arkken-case h1 {
+    font-weight: 400;
+    font-size: 45px;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.arkken-case h2 {
+    font-size: bold;
+    font-weight: 500;
+}
+
+.arkken-case,
+.testimonies,
+.about,
+.details,
+.optimized,
+.Content,
+.scaling {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 60px;
+}
+
+.arkken-case-img {
+    width: 900px;
+    height: 500px;
+    max-width: 100%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.arkken-delivery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 80px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #F6EEE9;
+}
+
+
+.storylake-page {
+    background: #F8F8F8;
+    color: #111827;
+    font-family: sans-serif;
+}
+
+.storylake-page p {
+    font-size: large;
+}
+
+.storylake-case h1 {
+    font-weight: 400;
+    font-size: 45px;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.storylake-case h2 {
+    font-size: bold;
+    font-weight: 500;
+}
+
+.storylake-case,
+.testimonies,
+.about,
+.details,
+.optimized,
+.Content,
+.scaling {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 60px;
+}
+
+.storylake-case-img {
+    width: 900px;
+    height: 500px;
+    max-width: 100%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.storylake-delivery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 80px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #FDFEF0;
+}
+
+.krusti-page {
+    background: #F8F8F8;
+    color: #111827;
+    font-family: sans-serif;
+}
+
+.krusti-page p {
+    font-size: large;
+}
+
+.krusti-case h1 {
+    font-weight: 400;
+    font-size: 45px;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.krusti-case h2 {
+    font-size: bold;
+    font-weight: 500;
+}
+
+.krusti-case,
+.testimonies,
+.about,
+.details,
+.optimized,
+.Content,
+.scaling {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 60px;
+}
+
+.krusti-case-img {
+    width: 900px;
+    height: 400px;
+    max-width: 100%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.krusti-delivery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 80px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color:#A3B0C2;
 }
 
 .kone-img {
@@ -293,7 +621,7 @@ lottie-player {
 }
 
 .clients {
-    padding: 80px 60px;
+    padding: 80px 0;
     background: #FFFFFF;
     border-top: 1px solid #F0F2F3;
 }
@@ -301,7 +629,7 @@ lottie-player {
 .client-container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 100px 60px;
+    padding: 0 60px;
 }
 
 .client-card {
@@ -336,6 +664,7 @@ lottie-player {
     text-align: left;
     margin-bottom: 40px;
     padding: 25px 0;
+    padding-left: 40px;
     font-size: 2rem;
     font-weight: 600;
     color: #1F3B2E;

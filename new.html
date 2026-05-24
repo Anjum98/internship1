@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en"
 
 <head>
     <link href="new.css" rel="stylesheet" />
@@ -15,7 +16,7 @@
 
         <div class="page-header">
             <div class="page-header__upper-row">
-                <a href="#" class="logo">make/shift</a>
+                <a href="new.html" class="logo">make/shift</a>
                 <ul class="page-header__upper-row__contents contents">
                     <li class="contents__content">
                         <a class="contents__content__link" href="#services">
@@ -55,8 +56,11 @@
     </section>
 
     <section class="see-work">
+        <a href="#clients" class="see-work-link">
 
         <h2>See our work →</h2>
+
+        </a>
 
         <div class="work-grid">
 
@@ -160,7 +164,7 @@
             <div class="services-grid">
 
                 <div class="service-card" onclick="toggleCard(this)">
-                    <h4>WEB DEVELOPMENT</h4>
+                    <h3>WEB DEVELOPMENT</h3>
                     <ul>
                         <li>Webflow development</li>
                         <li>Landing pages</li>
@@ -174,7 +178,7 @@
                 </div>
 
                 <div class="service-card" onclick="toggleCard(this)">
-                    <h4>Front-end</h4>
+                    <h3>Front-end</h3>
                     <ul>
                         <li>JavaScript components</li>
                         <li>React integration</li>
@@ -187,7 +191,7 @@
                 </div>
 
                 <div class="service-card" onclick="toggleCard(this)">
-                    <h4>Cloud and deployment</h4>
+                    <h3>Cloud and deployment</h3>
                     <ul>
                         <li>Static page deployment</li>
                         <li>Cloud hosting</li>
@@ -199,7 +203,7 @@
                 </div>
 
                 <div class="service-card" onclick="toggleCard(this)">
-                    <h4>Backend</h4>
+                    <h3>Backend</h3>
                     <ul>
                         <li>REST API integration</li>
                         <li>Headless CMS integration</li>
@@ -211,7 +215,7 @@
                 </div>
 
                 <div class="service-card" onclick="toggleCard(this)">
-                    <h4>Marketing & Analytics</h4>
+                    <h3>Marketing & Analytics</h3>
                     <ul>
                         <li>Custom workflows</li>
                         <li>HubSpot integration</li>
@@ -223,7 +227,7 @@
                 </div>
 
                 <div class="service-card" onclick="toggleCard(this)">
-                    <h4>GenAI</h4>
+                    <h3>GenAI</h3>
                     <ul>
                         <li>Custom GPTs & agents</li>
                         <li>Agentic chatbots</li>
@@ -243,7 +247,7 @@
 
                 <h2>Get In Touch</h2>
 
-                <form class="contact-form" action="https://formspree.io/f/xpqnaowg" method="POST">
+                <form class="contact-form" action="https://formspree.io/f/xpqnaowg" method="POST" autocomplete="off">
                     <input type="hidden" name="_redirect" value="thank-you.html">
 
                     <div class="input-group">
@@ -327,11 +331,10 @@
 
         const form = document.querySelector(".contact-form");
 
-        form.addEventListener("submit", function () {
-            setTimeout(() => {
-                form.reset();
-            }, 100);
+        form.addEventListener("submit", () => {
+            setTimeout(() => form.reset(), 500);
         });
 
     </script>
 </body>
+</html>
