@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="make.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+
+<body class="page">
+
+    <header>
+
+        <div class="page-header">
+            <div class="page-header__upper-row">
+                <a href="#" class="logo">Makeshift/Digital</a>
+                <ul class="page-header__upper-row__contents contents">
+                    <li class="contents__content">
+                        <a class="contents__content__link" href="#">
+                            Services
+                        </a>
+                    </li>
+                    <li class="contents__content">
+                        <a class="contents__content__link" href="#">
+                            Work
+                        </a>
+                    </li>
+                    <li class="contents__content">
+                        <a class="contents__content__link" href="#">
+                            Approach
+                        </a>
+                    </li>
+                    <li class="contents__content">
+                        <a class="contents__content__link" href="#">
+                            Get in touch
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__first-row">
+            <h1>B2B GROWTH<br>AT STARTUP SPEED.</h1>
+            <p>We build websites, optimize search, and automate<br> marketing for ambitious founders & enterprises.</p>
+            <button class="hero__first-row__button">Get a free consultation</button>
+
+        </div>
+
+    </section>
+
+    <section class="works">
+        <div class="work-proof">
+
+            <img src="logos/KONE_logo_blue_tcm36-121992.svg" alt="kone-logo">
+            <img src="logos/alpha_pro_logo.png" alt="alpha-pro-logo">
+            <img src="logos/arkken_logo.svg" alt="arkken-logo">
+            <img src="logos/Harmonya_Logo.svg" alt="harmonya-logo">
+            <img src="logos/taxstar_logo.png" alt="taxstar-logo">
+        </div>
+
+
+        </div>
+
+
+    </section>
+
+    <section class="services">
+        <div class="our-services">
+            <h2>Our Services</h2>
+
+            <div class="services-grid">
+
+                <div class="service-card" onclick="toggleCard(this)">
+                    <div class="icon">
+                        <img src="logos/backend.png">
+                    </div>
+                    <h3>HIGH-END WEB DEVELOPMENT</h3>
+                    <p>Optimized, responive websites built with Webflow or custom HTML/CSS.</p>
+
+                </div>
+
+                <div class="service-card" onclick="toggleCard(this)">
+                    <div class="icon">
+                        <img src="logos/artificial-intelligence.png">
+                    </div>
+                    <h3>SEO STRATEGY AND VISIBILITY</h3>
+                    <p>Get found by the right clients on Google and increase organic leads.</p>
+
+                </div>
+
+                <div class="service-card" onclick="toggleCard(this)">
+                    <div class="icon">
+                        <img src="logos/bots.png">
+                    </div>
+                    <h3>MARKETING AUTOMATION</h3>
+                    <p>Smart forms, CRS integration (HubSpot/Pipedrive), and automated lead nurturing.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Get In Touch</h2>
+
+        <form class="contact-form">
+
+            <div class="input-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+
+            <div class="input-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="input-group">
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+    </section>
+
+    <footer class="page-footer">
+        <div class="page-footer__black-area">
+            <p>© 2026 Makeshift Digital OY Clone. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script> function toggleCard(el) { el.classList.toggle("active"); } </script>
+</body>

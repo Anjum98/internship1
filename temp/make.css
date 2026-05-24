@@ -1,0 +1,289 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("OpenSans-VariableFont_wdth,wght.ttf");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.html,
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a:any-link {
+    text-decoration: none;
+    color: black;
+}
+
+
+.page {}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.page-header__upper-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: white;
+    color: black;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.contents {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin-left: auto;
+    padding: 0;
+}
+
+.contents__content {}
+
+.contents__content__link {}
+
+.hero {
+    display: flex;
+    text-align: center;
+}
+
+.hero__first-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+}
+
+.hero__first-row h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.hero__first-row p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    color: white;
+    background-color: #0ea5e9;
+
+}
+
+.hero__first-row__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 50px;
+    width: 230px;
+    cursor: pointer;
+    color: white;
+    background-color: #0056D2;
+    font-size: 600;
+    font-weight: 600;
+
+}
+
+.btn {
+    cursor: pointer;
+    color: black;
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: 230px;
+    height: 54px;
+    text-align: center;
+
+}
+
+.work-proof {
+    display: flex;
+    height: 25px;
+    width: auto;
+}
+
+.works {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    gap: 40px;
+
+}
+
+.logo-img {
+    height: 5px;
+    width: auto;
+}
+
+.services {
+    padding: 60px;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+}
+
+.our-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.service-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.icon {
+    font-size: 5px;
+    margin-bottom: 10px;
+}
+
+.service-card .icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.service-card.active {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+}
+
+.contact {
+    padding: 60px;
+    text-align: center;
+    background: #f1f5f9;
+    color: black;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: white;
+    color: black;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+
+input:focus,
+textarea:focus {
+    border: 1px solid #38bdf8;
+    background: #020617;
+}
+
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #38bdf8;
+    color: black;
+    font-family: "Open Sans";
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+
+
+
+
+
+
+
+.page-footer {
+    background-color: black;
+    color: white;
+    columns: white;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.page-footer__black-area {
+    margin: 0;
+    margin-top: auto;
+}
