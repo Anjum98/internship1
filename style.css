@@ -1102,22 +1102,20 @@ button:hover {
         grid-template-columns: 1fr;
     }
 
-
-
-
     .client-card {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 40px;
-        text-decoration: none;
-        color: white;
-        background: white;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .client-text,
+    .client-logo {
+        width: 100%;
     }
 
     .client-text h3 {
-        width: 100%;
         font-size: 22px;
+        width: 100%;
     }
 
     .client-logo img {
