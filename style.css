@@ -1247,6 +1247,28 @@ button:hover {
         font-weight: bold;
     }
 
+    .linkedin a {
+        color: #0A66C2;
+    }
+
+    .instagram i {
+        background: linear-gradient(45deg, #ffd600, #ff7a00, #ff0069, #d300c5, #7638fa);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .instagram a {
+        background: none;
+    }
+
+    .facebook a {
+        color: rgb(24, 119, 242);
+    }
+
+    .youtube a {
+        color: #ff0051;
+    }
+
     lottie-player {
         width: 250px;
         height: 250px;
