@@ -1244,6 +1244,7 @@ button:hover {
 
     .button {
         font-size: 20px;
+        font-weight: bold;
     }
 
     lottie-player {
