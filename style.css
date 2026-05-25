@@ -1242,12 +1242,12 @@ button:hover {
         text-align: center;
     }
 
-    .button {
+    .button text {
         font-size: 20px;
         font-weight: bold;
     }
 
-    .linkedin a {
+    .linkedin i {
         color: #0A66C2;
     }
 
@@ -1257,15 +1257,11 @@ button:hover {
         -webkit-text-fill-color: transparent;
     }
 
-    .instagram a {
-        background: none;
-    }
-
-    .facebook a {
+    .facebook i {
         color: rgb(24, 119, 242);
     }
 
-    .youtube a {
+    .youtube i {
         color: #ff0051;
     }
 
