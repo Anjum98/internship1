@@ -17,9 +17,6 @@
         <div class="page-header">
             <div class="page-header__upper-row">
                 <a href="index.html" class="logo">make/shift</a>
-                <div class="menu-icon" "toggleMenu()">
-                    ☰
-                </div>
                 <ul class="page-header__upper-row__contents contents">
                     <li class="contents__content">
                         <a class="contents__content__link" href="#services">
@@ -253,7 +250,6 @@
                 <h2>Get In Touch</h2>
 
                 <form class="contact-form" action="https://formspree.io/f/xpqnaowg" method="POST" autocomplete="off">
-                    <input type="hidden" name="_redirect" value="thank-you.html">
 
                     <div class="input-group">
                         <label for="name">Name</label>
@@ -272,13 +268,14 @@
                     </div>
 
                     <div class="checkbox-group">
-
                         <input type="checkbox" id="terms" required>
 
                         <label for="terms">
-                            I accept the <a href="terms.html" class="terms-text" target="_blank">Terms</a>
+                            I accept the
+                            <a href="terms.html" class="terms-text" target="_blank">
+                                Terms
+                            </a>
                         </label>
-
                     </div>
 
                     <button type="submit">Send Message</button>
@@ -336,8 +333,10 @@
 
         const form = document.querySelector(".contact-form");
 
-        form.addEventListener("submit", () => {
-            setTimeout(() => form.reset(), 500);
+        form.addEventListener("submit", function () {
+            setTimeout(() => {
+                form.reset();
+            }, 1500);
         });
 
 
