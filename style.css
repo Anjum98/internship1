@@ -596,6 +596,7 @@ lottie-player {
 
 .client-card:hover {
     text-decoration: underline;
+    color: #4F8A6B;;
 }
 
 .client-card:hover img {
