@@ -1140,6 +1140,11 @@ button:hover {
         display: block;
     }
 
+    .client-card:hover {
+        text-decoration: underline;
+        color: #4F8A6B;
+    }
+
     .service-card {
         min-height: auto;
     }
