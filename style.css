@@ -163,9 +163,10 @@ lottie-player {
 }
 
 .see-work {
-    padding: 120px 60px;
+    padding: 40px 20px 10px 60px;
     background: #fff;
     overflow: hidden;
+    background: transparent;
 }
 
 .see-work h2 {
@@ -197,8 +198,13 @@ lottie-player {
 }
 
 .work-card img {
-    width: auto;
-    height: 80%;
+    display: grid;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-columns: .75fr 1fr 1fr 1fr 1fr 1fr;
+    opacity: .85;
+    width: 60%;
+    height: 40%;
     object-fit: contain;
     display: block;
     border-radius: 10px;
@@ -208,6 +214,7 @@ lottie-player {
 
 .work-card:hover {
     transform: translateY(-6px);
+    transition: transform 0.3s ease;
 }
 
 .kone-case {}
@@ -538,38 +545,7 @@ lottie-player {
     background-color: #A3B0C2;
 }
 
-.kone-img {
-    width: 100px;
-    height: auto;
 
-}
-
-.taxstar-img {
-    width: 100px;
-    height: auto;
-
-}
-
-.guestbook-img {
-    width: auto;
-    height: 70px;
-
-}
-
-.arkken-img {
-    width: 100px;
-    height: auto;
-}
-
-.alpha-img {
-    width: 120px;
-    height: auto;
-}
-
-.harmonya-img {
-    width: 120px;
-    height: auto;
-}
 
 .clients {
     padding: 80px 0;
@@ -836,6 +812,7 @@ h3 {
 
 .service-card:hover {
     transform: translateY(-12px);
+    transition: transform 0.3s ease;
 }
 
 .contact {
