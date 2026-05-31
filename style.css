@@ -1,6 +1,6 @@
-@font-face {
+@font-face {  /*we use it when we have a font file saved in our folder, without it browser use default font*/
     font-family: "Open Sans";
-    src: url("OpenSans-VariableFont_wdth,wght.ttf");
+    src: url("OpenSans-VariableFont_wdth,wght.ttf");  /*font file location*/ /*ttf is truetype font,one of the font file format*/
     font-weight: 100 900;
     font-style: normal;
 }
@@ -44,19 +44,19 @@ li {
 
 
 
-.logo {
+.logo {         /*company name logo*/
     font-weight: 600;
     font-size: 30px;
     align-items: center;
 }
 
-.logo-img {
+.logo-img {  /*right now not needed*/
     max-width: 100px;
     height: auto;
     object-fit: contain;
 }
 
-img {
+img {  /*all img*/
     max-width: 100%;
     display: block;
 }
@@ -87,7 +87,7 @@ img {
 
 }
 
-.contents {
+.contents {  /*header contents*/
     display: flex;
     list-style: none;
     gap: 20px;
@@ -99,17 +99,17 @@ img {
 
 .contents__content {}
 
-.contents__content__link {
+.contents__content__link {  /*header contents*/
     color: #1F3B2E;
     font-weight: 500;
 }
 
-.contents__content__link:hover {
+.contents__content__link:hover {  /*header contents*/
     color: #4F8A6B;
     text-decoration: underline;
 }
 
-.hero {
+.hero {     /*b2b heading and text section*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -122,7 +122,7 @@ img {
 
 }
 
-.hero h1 {
+.hero h1 {  /*b2b heading*/
     margin: 0;
     font-size: 48px;
     font-weight: 500;
@@ -130,7 +130,7 @@ img {
     margin-bottom: 20px;
 }
 
-.hero p {
+.hero p {  /* text below b2b heading*/
     margin-bottom: 16px;
     line-height: 1.6;
     font-size: 18px;
@@ -156,72 +156,60 @@ img {
     align-items: center;
 }
 
-lottie-player {
+lottie-player {  /*targets lottie logo, controls logo style*/
     background: transparent;
     height: 300px;
     width: 300px;
 }
 
-.see-work {
-    padding: 40px 20px 10px 60px;
+.see-work {  /*see work section*/
+    padding: 50px 60px;
     background: #fff;
     overflow: hidden;
     background: transparent;
 }
 
-.see-work h2 {
+.see-work h2 { /*see work heading*/
     font-size: 26px;
     font-weight: 600;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: #006aff;
-    height: 30px;
     display: inline-block;
     cursor: pointer;
 }
 
-.see-work h2:hover {
+.see-work h2:hover { /*see work heading hover*/
     color: blue;
     text-decoration: underline;
 }
 
-.work-grid {
+.work-grid { /*see work section layout container*/
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 30px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
 }
 
-.work-card {
+.work-card {  /*see work individual logo box*/
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-top: 20px;
 }
 
-.work-card img {
-    width: 70%;
-    height: 70%;
+.work-card img {  /*see work logo img*/
+    width: 60%;
+    height: 60%;
     object-fit: contain;
 }
 
-.work-card:hover {
+.work-card:hover {  /*see work logo hover*/
     transform: translateY(-6px);
     transition: transform 0.3s ease;
 }
 
 .kone-case {}
-
-.kone-case h1 {
-    font-weight: 400;
-    font-size: 45px;
-    margin-bottom: 30px;
-    line-height: 1.3;
-}
-
-.kone-case h2 {
-    font-size: bold;
-    font-weight: 500;
-}
 
 .kone-page {
     background: #F8F8F8;
@@ -229,9 +217,22 @@ lottie-player {
     font-family: sans-serif;
 }
 
-.kone-page p {
+.kone-page p { /*kone page all paragraph text*/
     font-size: large;
 }
+
+.kone-case h1 {  /*kone page heading*/
+    font-weight: 400;
+    font-size: 45px;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+.kone-case h2 {  /*kone page other headings*/
+    font-size: bold;
+    font-weight: 500;
+}
+
 
 .kone-case,
 .testimonies,
@@ -539,20 +540,33 @@ lottie-player {
 
 
 
-.clients {
+.clients {  /*our clients section*/
     padding: 80px 0;
     background: #FFFFFF;
     border-top: 1px solid #F0F2F3;
     overflow: hidden;
 }
 
-.client-container {
+.clients h2 {  /*our clients heading*/
+    text-align: left;
+    margin-bottom: 40px;
+    padding: 25px 0;
+    padding-left: 40px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1F3B2E;
+    position: relative;
+    transform: rotate(0);
+
+}
+
+.client-container {  /*our clients section container*/
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 30px;
 }
 
-.client-card {
+.client-card {  /*case study links*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -572,27 +586,15 @@ lottie-player {
     transform: scale(1.03);
 }
 
-.client-text h3 {
+.client-text h3 {  /*case study link headings*/
     font-size: 30px;
     font-weight: 400;
     width: 80%;
     line-height: 1.4;
 }
 
-.clients h2 {
-    text-align: left;
-    margin-bottom: 40px;
-    padding: 25px 0;
-    padding-left: 40px;
-    font-size: 2rem;
-    font-weight: 600;
-    color: #1F3B2E;
-    position: relative;
-    transform: rotate(0);
 
-}
-
-.client-logo img {
+.client-logo img {  /*case study logo*/
     width: 100%;
     height: auto;
 }
@@ -601,7 +603,7 @@ h3 {
     font-weight: 500;
 }
 
-.kone-box {
+.kone-box { /*kone main page case study row with logo and text*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -611,7 +613,7 @@ h3 {
 
 }
 
-.kone-text {
+.kone-text {  /*kone main page case study row text*/
     width: 100%;
     text-align: left;
     color: #1F3B2E;
@@ -619,7 +621,7 @@ h3 {
 
 }
 
-.kone-logo {
+.kone-logo { /*kone main page case study row logo*/
     height: 100px;
     width: auto;
     display: flex;
@@ -627,7 +629,7 @@ h3 {
 
 }
 
-.guest-box {
+.guest-box {  /*guestbook main page case study row with logo and text*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -638,14 +640,14 @@ h3 {
 
 }
 
-.guest-text {
+.guest-text {  /*guestbook main page case study row text*/
     width: 65%;
     text-align: left;
     color: #1F3B2E;
     font-weight: 300;
 }
 
-.guest-logo {
+.guest-logo {  /*guestbook main page case study row logo*/
     height: 150px;
     width: auto;
     display: flex;
@@ -653,7 +655,7 @@ h3 {
 
 }
 
-.arkken-box {
+.arkken-box {  /*arkken main page case study row*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -664,14 +666,14 @@ h3 {
 
 }
 
-.arkken-text {
+.arkken-text {  /*arkken main page case study row text*/
     width: 65%;
     text-align: left;
     color: #1F3B2E;
     font-weight: 300;
 }
 
-.arkken-logo {
+.arkken-logo {  /*arkken main page case study row logo*/
     height: 50px;
     width: auto;
     display: flex;
@@ -680,7 +682,7 @@ h3 {
 
 }
 
-.story-box {
+.story-box {  /*storylake main page case study row with text and logo*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -691,14 +693,14 @@ h3 {
 
 }
 
-.storylake-text {
+.storylake-text {  /*storylake main page case study row text*/
     width: 65%;
     text-align: left;
     color: #1F3B2E;
     font-weight: 300;
 }
 
-.storylake-logo {
+.storylake-logo {   /*storylake main page case study row logo*/
     height: 150px;
     width: auto;
     display: flex;
@@ -707,7 +709,7 @@ h3 {
 
 }
 
-.krusti-box {
+.krusti-box {  /*main page krusti case study row with krusti logo*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -718,14 +720,14 @@ h3 {
 
 }
 
-.krusti-text {
+.krusti-text {   /*krusti main page case study row text*/
     width: 65%;
     text-align: left;
     color: #1F3B2E;
     font-weight: 300;
 }
 
-.krusti-logo {
+.krusti-logo {  /*krusti main page case study logo*/
     height: 150px;
     width: auto;
     display: flex;
@@ -734,7 +736,7 @@ h3 {
 
 }
 
-.services {
+.services {  /*how we help section*/
     padding: 80px 60px;
     background-color: #F8FAF8;
     color: #111827;
@@ -742,18 +744,18 @@ h3 {
 
 }
 
-.our-services {
+.our-services {  /*how we help*/
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
 
-.our-services h2 {
+.our-services h2 {  /*how we help heading*/
     font-weight: 600;
 }
 
-.services-grid {
+.services-grid {  /*how we help grid section*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
@@ -763,7 +765,7 @@ h3 {
     align-items: stretch;
 }
 
-.service-card {
+.service-card {  /*toggle card*/
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -776,14 +778,14 @@ h3 {
     transition: all 0.3s ease;
 }
 
-.service-card ul {
+.service-card ul { /*toggle card*/
     list-style: none;
     padding: 0;
     margin-top: 15px;
     text-align: left;
 }
 
-.service-card li {
+.service-card li {  /*toggle card list elements*/
     margin-bottom: 8px;
     color: #374151;
     font-size: 14px;
@@ -803,12 +805,12 @@ h3 {
     border: 1px solid #1f7a53;
 }
 
-.service-card:hover {
+.service-card:hover {  /*toggle card hover*/
     transform: translateY(-12px);
     transition: transform 0.3s ease;
 }
 
-.contact {
+.contact {  /*contact whole section*/
     padding: 60px;
     text-align: center;
     background: #F8FCF9;
@@ -816,7 +818,7 @@ h3 {
     color: black;
 }
 
-.contact-container {
+.contact-container { /*contact section*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -824,11 +826,11 @@ h3 {
     gap: 80px;
 }
 
-.contact-left {
+.contact-left {  /*form*/
     flex: 2;
 }
 
-.contact-right {
+.contact-right {  /*social side*/
     flex: 1;
     text-align: left;
 }
@@ -884,7 +886,7 @@ h3 {
     margin-bottom: 20px;
 }
 
-input,
+input,  /*form input*/
 textarea {
     width: 100%;
     padding: 15px;
@@ -941,7 +943,7 @@ a.terms-text {
 }
 
 
-.terms-section {
+.terms-section {  
     max-width: 600px;
     background: white;
     padding: 40px;
@@ -988,7 +990,7 @@ a.back-link {
     color: blue;
 }
 
-button {
+button {  /*send msg*/
     width: 100%;
     padding: 15px;
     border: none;
@@ -1029,7 +1031,7 @@ button:hover {
     font-size: 15px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {  /*for responsiveness*/
 
     .page-header__upper-row {
         flex-direction: column;
