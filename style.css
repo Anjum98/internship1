@@ -185,31 +185,23 @@ lottie-player {
 }
 
 .work-grid {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .work-card {
-    flex: 0 0 180px;
-    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .work-card img {
-    display: grid;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-    grid-template-columns: .75fr 1fr 1fr 1fr 1fr 1fr;
-    opacity: .85;
-    width: 60%;
-    height: 40%;
+    width: 70%;
+    height: 70%;
     object-fit: contain;
-    display: block;
-    border-radius: 10px;
-    padding: 12px;
-    box-sizing: border-box;
 }
 
 .work-card:hover {
@@ -572,7 +564,8 @@ lottie-player {
 
 .client-card:hover {
     text-decoration: underline;
-    color: #4F8A6B;;
+    color: #4F8A6B;
+    ;
 }
 
 .client-card:hover img {
