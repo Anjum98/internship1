@@ -246,7 +246,8 @@ lottie-player {
     /*kone page heading*/
     font-weight: 400;
     font-size: 45px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 60px;
     line-height: 1.3;
 }
 
@@ -377,7 +378,8 @@ lottie-player {
 .guestbook-case h1 {
     font-weight: 400;
     font-size: 45px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 80px;
     line-height: 1.3;
     align-items: center;
     display: flex;
@@ -426,7 +428,8 @@ lottie-player {
 .arkken-case h1 {
     font-weight: 400;
     font-size: 45px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 60px;
     line-height: 1.3;
     align-items: center;
     display: flex;
@@ -476,7 +479,8 @@ lottie-player {
 .storylake-case h1 {
     font-weight: 400;
     font-size: 45px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 60px;
     line-height: 1.3;
     align-items: center;
     display: flex;
@@ -525,7 +529,8 @@ lottie-player {
 .krusti-case h1 {
     font-weight: 400;
     font-size: 45px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 60px;
     line-height: 1.3;
     align-items: center;
     display: flex;
@@ -1206,8 +1211,8 @@ button:hover {
 
     .work-card img {
         /*see work logo img*/
-        width: 60%;
-        height: 60%;
+        width: 70%;
+        height: 70%;
         object-fit: contain;
     }
 
