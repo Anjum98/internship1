@@ -8,6 +8,7 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
+
 <body class="page">
 
 
@@ -249,8 +250,10 @@
 
                 <h2>Get In Touch</h2>
 
-                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
-                    <input type="hidden" name='access_key' value="64d4c670-0087-4cf8-865e-6f86f065bf83">
+                <form class="contact-form" id="contact-form" autocomplete="off">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name='_subject' value="New message from website">
+
 
                     <div class="input-group">
                         <label for="name">Name</label>
@@ -326,22 +329,31 @@
         </div>
     </footer>
 
-    <script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+    <script>
         function toggleCard(el) {
             el.classList.toggle("active");
         }
 
-        const form = document.querySelector(".contact-form");
+        emailjs.init("sDUEsGo_OW3Z3DZnD");
 
-        form.addEventListener("submit", function () {
-            setTimeout(() => {
-                form.reset();
-            }, 1500);
+        const form = document.getElementById("contact-form");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm(
+                "service_6sm8c35",
+                "template_xrefvub",
+                this
+            ).then(() => {
+                window.location.href = "thank-you.html";
+            }).catch((error) => {
+                alert("Message failed to send");
+                console.log(error);
+            });
         });
-
-
-
     </script>
 </body>
 

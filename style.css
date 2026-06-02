@@ -772,7 +772,7 @@ h3 {
 
 .krusti-logo {
     /*krusti main page case study logo*/
-    height: 150px;
+    height: 180px;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -1088,6 +1088,8 @@ button:hover {
 .thank-you-card h1 {
     color: #1F3B2E;
     margin-bottom: 15px;
+    font-size: 600;
+    font-weight: 600;
 }
 
 .thank-you-card p {
@@ -1096,7 +1098,8 @@ button:hover {
     margin-bottom: 10px;
 }
 
-.back-home {  /*thank u page back home link*/
+.back-home {
+    /*thank u page back home link*/
     display: inline-block;
     margin-top: 25px;
     padding: 12px 22px;
@@ -1108,7 +1111,8 @@ button:hover {
     transition: 0.3s ease;
 }
 
-.back-home:hover {  /*thank u page back home link*/
+.back-home:hover {
+    /*thank u page back home link*/
     color: #16603F;
     transform: translateY(-2px);
 }
