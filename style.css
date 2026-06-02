@@ -598,6 +598,7 @@ lottie-player {
     justify-content: space-between;
     align-items: center;
     padding: 40px;
+    border-bottom: 1px solid #E5E7EB;
     text-decoration: none;
     color: white;
     background: white;
@@ -610,7 +611,7 @@ lottie-player {
 }
 
 .client-card:hover img {
-    transform: scale(1.03);
+    transform: none;
 }
 
 .client-text h3 {
@@ -1037,14 +1038,15 @@ a.back-link {
     position: absolute;
     top: 20px;
     left: 40px;
-    color: dodgerblue;
+    color: green;
     text-decoration: none;
     font-weight: 500;
     font-size: larger;
 }
 
 .back-link:hover {
-    color: blue;
+    color: #16603F;
+    ;
 }
 
 button {
@@ -1193,6 +1195,22 @@ button:hover {
         text-align: center;
     }
 
+    .work-grid {
+        /*see work section layout container*/
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0;
+    }
+
+    .work-card img {
+        /*see work logo img*/
+        width: 60%;
+        height: 60%;
+        object-fit: contain;
+    }
+
     .services-grid {
         grid-template-columns: 1fr;
     }
@@ -1202,6 +1220,7 @@ button:hover {
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
+        cursor: default;
     }
 
     .client-text,
@@ -1210,7 +1229,7 @@ button:hover {
     }
 
     .client-text h3 {
-        font-size: 22px;
+        font-size: 25px;
         width: 100%;
     }
 
@@ -1219,7 +1238,7 @@ button:hover {
     }
 
     .client-logo img {
-        width: 100%;
+        width: 80%;
         height: auto;
         display: block;
     }
@@ -1228,6 +1247,8 @@ button:hover {
         text-decoration: underline;
         color: #4F8A6B;
     }
+
+
 
     .service-card {
         min-height: auto;
@@ -1333,6 +1354,25 @@ button:hover {
 
     .contact-form button {
         font-size: 14px;
+    }
+
+    .back-home {
+        /*thank u page back home link*/
+        display: inline-block;
+        margin-top: 25px;
+        padding: 12px 22px;
+        background: #1F7A53;
+        color: wheat;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: 0.3s ease;
+    }
+
+    .back-home:hover {
+        /*thank u page back home link*/
+        color: #16603F;
+        transform: translateY(-2px);
     }
 
     .linkedin i {
